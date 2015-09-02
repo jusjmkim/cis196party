@@ -1,3 +1,13 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
 
-gem 'rack'
+gem 'sinatra'
+gem 'rake'
+gem 'thin'
+gem 'sendgrid-ruby'
+gem 'dotenv'
+
+group :development do
+  gem 'pry'
+  gem 'shotgun'
+end
