@@ -3,7 +3,6 @@ ruby '2.2.2'
 
 gem 'sinatra'
 gem 'rake'
-gem 'thin'
 gem 'sendgrid-ruby'
 gem 'dotenv'
 
