@@ -1,4 +1,4 @@
-class ApplicationController < Sinatra::Application
+class ApplicationController < Sinatra::Base
   set :views, proc { File.join(root, 'views') }
 
   get '/' do
