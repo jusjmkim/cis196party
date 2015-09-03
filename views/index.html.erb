@@ -1,37 +1,54 @@
-<h1>It's a CIS 196 party!</h1>
+<div class="centered index-wrapper">
+  <h1>It's a CIS 196 party!</h1>
 
-<form action="/" method="post" accept-charset="utf-8">
-  <div class="field">
-    <label for="Name">Name</label>
-    <input type="text" name="Name" value="" id="Name" required>
-    <span class="optional">* required</span>
-  </div>
+  <form action="/" method="post" accept-charset="utf-8">
+    <div class="field">
+      <label class="label" for="Name">Name</label>
+      <div class="input-area">
+        <input class="input-field" type="text" name="Name" value="" id="Name" required>
+        <span class="optional">* required</span>
+      </div>
+    </div>
 
-  <br />
-  <div class="field">
-    <label for="Location">Location</label>
-    <input type="text" name="Location" value="" id="Location" required>
-    <span class="optional">* required</span>
-  </div>
-
-  <br />
-  <div class="field">
-    This will just help me find you faster.
     <br />
-    <label for="Wearing">Wearing</label>
-    <input type="text" name="Wearing" value="" id="Wearing">
-    <span class="optional">(Optional)</span>
-  </div>
+    <div class="field">
+      <label class="label" for="Location">Location</label>
+      <div class="description">
+        Please be as descriptive as possible.
+      </div>
+      <div class="input-area">
+        <textarea class="input-field" name="Location" id="" required></textarea>
+        <span class="optional">* required</span>
+      </div>
+    </div>
 
-  <br />
-  <div class="field">
-    Please put in your phone number or email here, and I will let you know how long it'll be before I can help you.
     <br />
-    <label for="Contact">Contact</label>
-    <input type="text" name="Contact" value="" id="Contact">
-    <span class="optional">(Optional)</span>
-  </div>
+    <div class="field">
+      <label class="label" for="Wearing">
+        Wearing <span class="optional">(Optional)</span>
+      </label>
+      <div class="description">
+        This will just help me find you faster.
+      </div>
+      <div class="input-area">
+        <input class="input-field" type="text" name="Wearing" value="" id="Wearing">
+      </div>
+    </div>
 
-  <br />
-  <input type="submit" value="Submit">
-</form>
+    <br />
+    <div class="field">
+      <label class="label" for="Contact">
+        Contact <span class="optional">(Optional)</span>
+      </label>
+      <div class="description">
+        Please put in your phone number or email here.
+      </div>
+      <div class="input-area">
+        <input class="input-field" type="text" name="Contact" value="" id="Contact">
+      </div>
+    </div>
+
+    <br />
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</div>

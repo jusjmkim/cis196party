@@ -1,0 +1,4 @@
+Style/TrivialAccessors:
+  Enabled: false
+Style/Documentation:
+  Enabled: false

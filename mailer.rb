@@ -15,8 +15,8 @@ class Mailer
 
   def email_body
     body = "#{name} needs help at #{location}."
-    body += " He/she is wearing #{wearing}" if wearing
-    body += " Contact him/her at #{contact}" if contact
+    body += " He/she is wearing #{wearing}." unless wearing.empty?
+    body += " Contact him/her at #{contact}" unless contact.empty?
     body
   end
 
