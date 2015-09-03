@@ -3,7 +3,7 @@ ruby '2.2.2'
 
 gem 'sinatra'
 gem 'rake'
-gem 'thin'
+gem 'puma'
 gem 'sendgrid-ruby'
 gem 'dotenv'
 
